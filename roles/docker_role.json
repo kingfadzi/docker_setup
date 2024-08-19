@@ -1,0 +1,12 @@
+{
+  "name": "docker_role",
+  "description": "Role to configure Docker on nodes",
+  "run_list": [
+    "recipe[docker_setup::default]"
+  ],
+  "override_attributes": {
+    "docker": {
+      "version": "latest"
+    }
+  }
+}
